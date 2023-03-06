@@ -1,3 +1,52 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+@use "../abstracts/" as abst;
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1.25rem 4rem 1.25rem;
+  background-color: abst.$Background;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
+}
+
+.reserver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6875rem;
+  text-align: center;
+  background-color: abst.$Background;
+  padding: 3rem 1.25rem 4rem 1.25rem;
+
+  &__text {
+    color: abst.$darker;
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+  background-color: #eaeaea;
+
+  &__icon {
+    color: abst.$darker;
+  }
+
+  &__text {
+    color: abst.$darker;
+  }
+}

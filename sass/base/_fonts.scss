@@ -3,3 +3,37 @@
 // -----------------------------------------------------------------------------
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+
+//font-family: "Roboto", sans-serif;
+//font-family: 'Shrikhand', cursive;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bolder {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.medium {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.lighter {
+  font-weight: 300;
+  font-size: 1.0625rem;
+}
+
+.bigger {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.bignlight {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}

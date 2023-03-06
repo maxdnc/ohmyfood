@@ -1,0 +1,22 @@
+@use "../abstracts/" as abst;
+
+.box {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+
+  &__wrapper-img {
+    &__item {
+      object-fit: cover;
+      height: 175px;
+      width: 100%;
+    }
+  }
+
+  &__wrapper-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8125rem;
+  }
+}

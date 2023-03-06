@@ -1,0 +1,49 @@
+@use "../abstracts/" as abst;
+
+.contener {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: abst.$Background;
+  padding-block: 1.8125rem;
+  padding-left: 2.125rem;
+  border-radius: 1.25rem;
+  position: relative;
+  transition: 0.2s background-color ease-in-out;
+
+  &__icon {
+    color: abst.$icon-colors;
+    transition: 0.2s color ease-in-out;
+  }
+
+  &__number {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    font-size: 0.875rem;
+
+    color: white;
+    background-color: abst.$Primaire;
+    border-radius: 100%;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 150%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: abst.$Ligter-primaire;
+  }
+
+  &:hover & {
+    &__icon {
+      color: abst.$Primaire;
+    }
+  }
+}
