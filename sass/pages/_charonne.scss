@@ -1,0 +1,35 @@
+@use "../abstracts/" as abst;
+
+.photo-header {
+  &__item {
+    object-fit: cover;
+    max-height: 17.1875rem;
+    width: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  background: abst.$Background;
+  position: relative;
+  padding: 2rem 1rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  width: 100%;
+  z-index: 1;
+  margin-top: -3rem;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem 2rem;
+    align-items: center;
+  }
+}
+
+.flexbuttoncommander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
