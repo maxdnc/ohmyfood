@@ -158,17 +158,19 @@ button {
 .button {
   display: inline-block;
   background: linear-gradient(#ff79da 5.2%, #9356dc 110.74%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
+  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5625em;
   color: white;
-  padding: 0.8125rem 1.171875rem;
+  padding: 0.8125em 1.171875em;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   font-size: 1rem;
+  font-weight: 500;
 }
 .button:hover {
   background: linear-gradient(rgb(255, 141, 218) 5.2%, rgb(147, 106, 220) 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .box {
@@ -188,7 +190,39 @@ button {
   align-items: center;
   padding: 0.8125rem;
 }
+.box__wrapper-txt__heart {
+  margin-right: 1rem;
+  width: 21px;
+  height: auto;
+  cursor: pointer;
+}
+.box__wrapper-txt__heart path {
+  stroke-width: 30;
+  stroke: black;
+  fill-opacity: 0;
+  stroke-dasharray: 1520;
+  stroke-dashoffset: 0;
+  transition: fill-opacity 0.6s ease-in;
+}
+.box__wrapper-txt__heart path:hover {
+  fill-opacity: 1;
+  animation: animation-heart 1s ease-in-out forwards;
+}
 
+@keyframes animation-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 1520;
+    stroke: #ff79da;
+  }
+  100% {
+    stroke-dashoffset: 3040;
+    stroke: #9356dc;
+    stroke-opacity: 0;
+  }
+}
 .contener {
   display: flex;
   gap: 1.25rem;
