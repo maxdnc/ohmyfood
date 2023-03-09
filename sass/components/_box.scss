@@ -6,10 +6,23 @@
   overflow: hidden;
 
   &__wrapper-img {
+    position: relative;
     &__item {
       object-fit: cover;
       height: 175px;
       width: 100%;
+    }
+    &__new {
+      position: absolute;
+      top: 1rem;
+      right: 0.75rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      padding: 0.25em 0.5625em;
+      color: abst.$Tertiare-darker;
+      background-color: abst.$Tertiaire;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
     }
   }
 

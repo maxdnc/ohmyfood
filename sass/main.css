@@ -178,11 +178,26 @@ button {
   border-radius: 15px;
   overflow: hidden;
 }
+.box__wrapper-img {
+  position: relative;
+}
 .box__wrapper-img__item {
   -o-object-fit: cover;
      object-fit: cover;
   height: 175px;
   width: 100%;
+}
+.box__wrapper-img__new {
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.25em 0.5625em;
+  color: #008766;
+  background-color: #99e2d0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 .box__wrapper-txt {
   display: flex;
