@@ -33,6 +33,7 @@ body {
 .name-restaurant {
   font-family: "Shrikhand", cursive;
   font-size: 1.75rem;
+  font-weight: 400;
 }
 
 .entreplatdessert {
