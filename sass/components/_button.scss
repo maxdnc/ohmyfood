@@ -12,7 +12,7 @@
   color: white;
   padding: 0.8125em 1.171875em;
   max-width: fit-content;
-  transition: all 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   font-size: 1rem;
   font-weight: 500;
 
@@ -38,32 +38,40 @@
     stroke-width: 30;
     stroke: black;
     fill-opacity: 0;
-
     stroke-dasharray: 1520;
     stroke-dashoffset: 0;
 
-    transition: fill-opacity 0.6s ease-in;
+    transition: all 0.6s linear;
 
     &:hover {
       fill-opacity: 1;
-      animation: animation-heart 1s ease-in-out forwards;
+      stroke-linecap: round;
+      stroke: #ff79da;
+      stroke-width: 15;
+
+      stroke-dashoffset: 1220;
+      animation: line-heart 1.2s linear 0.6s infinite;
     }
   }
 }
 
-@keyframes animation-heart {
+@keyframes line-heart {
   0% {
-    stroke-dashoffset: 0;
-  }
-
-  50% {
+    stroke-dasharray: 300 1220;
     stroke-dashoffset: 1520;
+    stroke-width: 15;
     stroke: #ff79da;
   }
 
-  100% {
-    stroke-dashoffset: 3040;
+  50% {
     stroke: #9356dc;
-    stroke-opacity: 0;
+  }
+
+  100% {
+    stroke-dasharray: 300 1220;
+    stroke-dashoffset: 3040;
+    stroke-width: 15;
+    stroke: #ff79da;
   }
 }
+//
