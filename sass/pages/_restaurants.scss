@@ -11,7 +11,6 @@
 .menu {
   display: flex;
   flex-direction: column;
-
   background: abst.$Background;
   position: relative;
   padding: 2rem 1rem;
@@ -19,6 +18,8 @@
   width: 100%;
   z-index: 1;
   margin-top: -3rem;
+
+  //@include abst.delay2(5, 0.4s);
 
   &__wrapper {
     display: flex;
