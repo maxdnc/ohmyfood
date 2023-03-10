@@ -1,0 +1,53 @@
+@use "../abstracts/" as abst;
+
+.menu-box {
+  background-color: white;
+  display: flex;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.9375em;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover & {
+    &__check {
+      width: 3.75rem;
+      transform: scaleX(1);
+    }
+  }
+
+  &__wrapper-txt {
+    display: flex;
+
+    width: 100%;
+
+    &__description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 1rem;
+
+      &__item {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    &__prix {
+      align-self: end;
+      padding: 0 1rem 1rem 0;
+    }
+  }
+  &__check {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: abst.$Tertiaire;
+    width: 0rem;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+  }
+}

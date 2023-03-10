@@ -4,229 +4,252 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-    <title>ohmyfood</title>
+    <title>À La Française</title>
   </head>
   <body>
     <header class="header">
+      <a class="header__back" href="../index.html"
+        ><svg
+          width="18"
+          height="16"
+          viewBox="0 0 18 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.88557 14.9283L9.03347 15.7417C8.67267 16.0861 8.08924 16.0861 7.73228 15.7417L0.270601 8.62285C-0.0902003 8.27845 -0.0902003 7.72155 0.270601 7.38081L7.73228 0.258301C8.09308 -0.0861003 8.6765 -0.0861003 9.03347 0.258301L9.88557 1.07167C10.2502 1.41974 10.2425 1.98763 9.87022 2.32837L5.24505 6.53446H16.2764C16.7869 6.53446 17.1976 6.9265 17.1976 7.41379V8.58622C17.1976 9.07351 16.7869 9.46554 16.2764 9.46554H5.24505L9.87022 13.6716C10.2464 14.0124 10.254 14.5803 9.88557 14.9283Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+
       <img
         class="header__logo"
-        src="./assets/images/logo/ohmyfood@2x.svg"
+        src="../assets/images/logo/ohmyfood@2x.svg"
         alt="logo ohmyfood"
       />
     </header>
-
     <main>
-      <div class="location">
-        <i class="location__icon fa-solid fa-location-dot"></i>
-        <p class="location__text">Paris, Belleville</p>
+      <div class="photo-header">
+        <img
+          class="photo-header__item"
+          src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="differents plats de cuisine"
+        />
       </div>
-      <section class="reserver">
-        <h1 class="reserver__title bigger">
-          Réservez le menu qui vous convient
-        </h1>
-        <p class="reserver__text bignlight">
-          Découvrez des restaurants d’exception, sélectionnés par nos soins.
-        </p>
-        <a href="#restaurants" class="reserver__button button"
-          >Explorer nos restaurants</a
-        >
-      </section>
-      <section class="fonctionnement">
-        <h2 class="fonctionnement__title bigger">Fonctionnement</h2>
-        <div class="fonctionnement__grid">
-          <div class="contener">
-            <i class="contener__icon fa-solid fa-mobile-screen-button"></i>
-            <p class="contener__text medium">Choisissez un restaurant</p>
-            <span class="contener__number">1</span>
-          </div>
-          <div class="contener">
-            <i class="contener__icon fa-solid fa-list-ul"></i>
-            <p class="contener__text medium">Composez votre menu</p>
-            <span class="contener__number">2</span>
-          </div>
-          <div class="contener">
-            <i class="contener__icon fa-solid fa-store"></i>
-            <p class="contener__text medium">Dégustez au restaurant</p>
-            <span class="contener__number">3</span>
-          </div>
-        </div>
-      </section>
-      <section class="restaurants" id="restaurants">
-        <h3 class="restaurants__title bigger">Restaurants</h3>
-        <div class="restaurants__grid">
-          <a href="./restaurants/la-palette-du-gout.html" class="box">
-            <div class="box__wrapper-img">
-              <img
-                class="box__wrapper-img__item"
-                src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt=""
-              />
-              <span class="box__wrapper-img__new">Nouveau</span>
-            </div>
-            <div class="box__wrapper-txt">
-              <div class="box__wrapper-txt__items">
-                <p class="bolder">La palette du goût</p>
-                <p class="lighter">Ménilmontant</p>
-              </div>
-              <!-- heart  -->
-              <svg
-                class="box__wrapper-txt__heart heart"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-25 0 560 512"
-              >
-                <path
-                  d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7
-                10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68
-                47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4
-                268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0
-                115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                  fill="url(#Gradient1)"
-                />
-                <defs>
-                  <linearGradient
-                    id="Gradient1"
-                    x1="0%"
-                    y1="100%"
-                    x2="0%"
-                    y2="0%"
-                  >
-                    <stop offset="0%" stop-color="#9356dc" />
-                    <stop offset="100%" stop-color="#ff79da" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-          <a href="./restaurants/la-note-enchantee.html" class="box">
-            <div class="box__wrapper-img">
-              <img
-                class="box__wrapper-img__item"
-                src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt=""
-              />
-              <span class="box__wrapper-img__new">Nouveau</span>
-            </div>
-            <div class="box__wrapper-txt">
-              <div class="box__wrapper-txt__items">
-                <p class="bolder">La note enchantée</p>
-                <p class="lighter">Charonne</p>
-              </div>
-              <svg
-                class="box__wrapper-txt__heart heart"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-25 0 560 512"
-              >
-                <path
-                  d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7
-              10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68
-              47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4
-              268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0
-              115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                  fill="url(#Gradient1)"
-                />
-                <defs>
-                  <linearGradient
-                    id="Gradient1"
-                    x1="0%"
-                    y1="100%"
-                    x2="0%"
-                    y2="0%"
-                  >
-                    <stop offset="0%" stop-color="#9356dc" />
-                    <stop offset="100%" stop-color="#ff79da" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-          <a href="./restaurants/a-la-francaise.html" class="box">
-            <div class="box__wrapper-img">
-              <img
-                class="box__wrapper-img__item"
-                src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt=""
-              />
-            </div>
-            <div class="box__wrapper-txt">
-              <div class="box__wrapper-txt__items">
-                <p class="bolder">À la française</p>
-                <p class="lighter">Cité Rouge</p>
-              </div>
-              <svg
-                class="box__wrapper-txt__heart heart"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-25 0 560 512"
-              >
-                <path
-                  d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7
-              10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68
-              47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4
-              268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0
-              115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                  fill="url(#Gradient1)"
-                />
-                <defs>
-                  <linearGradient
-                    id="Gradient1"
-                    x1="0%"
-                    y1="100%"
-                    x2="0%"
-                    y2="0%"
-                  >
-                    <stop offset="0%" stop-color="#9356dc" />
-                    <stop offset="100%" stop-color="#ff79da" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </a>
-          <a href="./restaurants/le-delice-des-sens.html" class="box">
-            <div class="box__wrapper-img">
-              <img
-                class="box__wrapper-img__item"
-                src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt=""
-              />
-            </div>
-            <div class="box__wrapper-txt">
-              <div class="box__wrapper-txt__items">
-                <p class="bolder">Le délice des sens</p>
-                <p class="lighter">Folie-Méricourt</p>
-              </div>
 
-              <svg
-                class="box__wrapper-txt__heart heart"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-25 0 560 512"
-              >
-                <path
-                  d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7
-              10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68
-              47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4
-              268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0
-              115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
-                  fill="url(#Gradient1)"
-                />
-                <defs>
-                  <linearGradient
-                    id="Gradient1"
-                    x1="0%"
-                    y1="100%"
-                    x2="0%"
-                    y2="0%"
-                  >
-                    <stop offset="0%" stop-color="#9356dc" />
-                    <stop offset="100%" stop-color="#ff79da" />
-                  </linearGradient>
-                </defs>
-              </svg>
+      <section class="menu">
+        <div class="menu__wrapper">
+          <h1 class="menu__wrapper__title name-restaurant">À la française</h1>
+          <svg
+            class="heart"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="-25 0 560 512"
+          >
+            <path
+              d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7
+                  10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68
+                  47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4
+                  268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0
+                  115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+              fill="url(#Gradient1)"
+            />
+            <defs>
+              <linearGradient id="Gradient1" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stop-color="#9356dc" />
+                <stop offset="100%" stop-color="#ff79da" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <article class="main-menu">
+          <h2 class="main-menu__title entreplatdessert">Entrées</h2>
+          <div class="menu-flexbox">
+            <div class="main-menu__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Tartare de poulpe acidulé
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Aux zestes d'orange
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>25€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
             </div>
-          </a>
+            <div class="menu__entrees__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Velouté de légumes d'antan
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Carotte, panais, topinambour
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>35€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__entrees__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Soupe à l'oignon
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Revisitée
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>20€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="main-menu">
+          <h2 class="main-menu__title entreplatdessert">Plats</h2>
+          <div class="menu-flexbox">
+            <div class="main-menu__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Coquilles Saint-Jacques
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Accompagnées d'une purée de panais
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>40€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__plats__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Magret de canard
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Et parmentier de pommes de terre
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>35€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__plats__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Pigeonneau d’Ille-et-Vilaine
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Sur son lit de gnocchis aux légumes
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>44€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="main-menu">
+          <h2 class="main-menu__title entreplatdessert">Desserts</h2>
+          <div class="menu-flexbox">
+            <div class="main-menu__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Pétales de violettes glacés
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Et purée de noisettes
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>18€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__desserts__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Fondant au chocolat
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Revisité
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>22€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="menu__desserts__contener menu-box">
+              <div class="menu-box__wrapper-txt">
+                <div class="menu-box__wrapper-txt__description">
+                  <h3 class="menu-box__wrapper-txt__description__item">
+                    Millefeuille croustillant
+                  </h3>
+                  <p class="menu-box__wrapper-txt__description__item">
+                    Myrtilles et pâte d’amande
+                  </p>
+                </div>
+                <div class="menu-box__wrapper-txt__prix">
+                  <strong>23€</strong>
+                </div>
+                <div class="menu-box__check">
+                  <i class="menu-box__check__item fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="flexbuttoncommander">
+          <a class="button commander" href="#">Commander</a>
         </div>
       </section>
     </main>

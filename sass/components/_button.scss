@@ -12,7 +12,7 @@
   color: white;
   padding: 0.8125em 1.171875em;
   max-width: fit-content;
-  transition: all 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   font-size: 1rem;
   font-weight: 500;
 
@@ -24,3 +24,54 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
+.commander {
+  padding: 0.8125em 3em;
+}
+
+.heart {
+  margin-right: 1rem;
+  width: 21px;
+  height: auto;
+  cursor: pointer;
+
+  path {
+    stroke-width: 30;
+    stroke: black;
+    fill-opacity: 0;
+    stroke-dasharray: 1520;
+    stroke-dashoffset: 0;
+
+    transition: all 0.6s linear;
+
+    &:hover {
+      fill-opacity: 1;
+      stroke-linecap: round;
+      stroke: #ff79da;
+      stroke-width: 15;
+
+      stroke-dashoffset: 1220;
+      animation: line-heart 1.2s linear 0.6s infinite;
+    }
+  }
+}
+
+@keyframes line-heart {
+  0% {
+    stroke-dasharray: 300 1220;
+    stroke-dashoffset: 1520;
+    stroke-width: 15;
+    stroke: #ff79da;
+  }
+
+  50% {
+    stroke: #9356dc;
+  }
+
+  100% {
+    stroke-dasharray: 300 1220;
+    stroke-dashoffset: 3040;
+    stroke-width: 15;
+    stroke: #ff79da;
+  }
+}
+//
