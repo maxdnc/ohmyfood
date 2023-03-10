@@ -2,7 +2,9 @@
 
 ---
 
-##### 🌱 Last update => 10/03: all restaurents pages done / animation heart done / mobile version done .
+##### 🌱 Last update => 06/03.22h homepage mobile.
+
+06/03.12h mise en place de la structure du projet
 
 ---
 
