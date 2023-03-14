@@ -1,0 +1,116 @@
+@use "../abstracts/" as abst;
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 141, 218, 1) 5.2%,
+    rgba(147, 106, 220, 1) 110.74%
+  );
+  z-index: 10;
+  animation: display-loader 3s forwards;
+
+  &__gradient {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 141, 218, 1) 5.2%,
+      rgba(147, 106, 220, 1) 110.74%
+    );
+    animation: 3s loader-anim-background ease-in-out infinite alternate;
+  }
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: logo 0.75s ease-in-out infinite alternate-reverse;
+    color: white;
+  }
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.line-a {
+  width: 100%;
+  height: 100%;
+  stroke-width: 5px;
+  stroke-dasharray: 100 1850;
+  stroke-dashoffset: 95;
+  stroke-linecap: round;
+  fill-opacity: 0;
+  animation: line-animation 1.5s infinite alternate ease-in-out;
+  position: absolute;
+}
+.line-b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  stroke-width: 5px;
+  stroke-dasharray: 100 1850;
+  stroke-dashoffset: 95;
+  stroke-linecap: round;
+  fill-opacity: 0;
+  animation: line-animation 1.5s infinite alternate ease-in-out;
+  transform: rotate(180deg);
+}
+
+@keyframes loader-anim-background {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes line-animation {
+  0% {
+    stroke-dashoffset: 95;
+    stroke-opacity: 0;
+  }
+  50% {
+    stroke-opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -1800;
+    stroke-opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes display-loader {
+  0% {
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
