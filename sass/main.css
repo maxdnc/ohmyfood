@@ -8,49 +8,6 @@
     transform: translateX(0);
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-.bolder {
-  font-weight: 700;
-  font-size: 1.125rem;
-}
-
-.medium {
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.lighter {
-  font-weight: 300;
-  font-size: 1.0625rem;
-}
-
-.bigger {
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-}
-
-.bignlight {
-  font-weight: 300;
-  font-size: 1.125rem;
-  line-height: 1.3125rem;
-}
-
-.name-restaurant {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.75rem;
-  font-weight: 400;
-}
-
-.entreplatdessert {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
 *,
 *::before,
 *::after {
@@ -117,6 +74,49 @@ button {
   border: none;
   color: inherit;
   background: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bolder {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.medium {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.lighter {
+  font-weight: 300;
+  font-size: 1.0625rem;
+}
+
+.bigger {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.bignlight {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+
+.name-restaurant {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.entreplatdessert {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .header {
@@ -196,27 +196,27 @@ button {
 }
 .menu-flexbox > :nth-child(1) {
   opacity: 0;
-  animation: appear 0.41s ease-out 0.15s forwards;
+  animation: appear 0.3538461538s ease-out 0.15s forwards;
   transform: translateX(15%);
 }
 .menu-flexbox > :nth-child(2) {
   opacity: 0;
-  animation: appear 0.67s ease-out 0.3s forwards;
+  animation: appear 0.5076923077s ease-out 0.3s forwards;
   transform: translateX(20%);
 }
 .menu-flexbox > :nth-child(3) {
   opacity: 0;
-  animation: appear 0.93s ease-out 0.45s forwards;
+  animation: appear 0.6615384615s ease-out 0.45s forwards;
   transform: translateX(25%);
 }
 .menu-flexbox > :nth-child(4) {
   opacity: 0;
-  animation: appear 1.19s ease-out 0.6s forwards;
+  animation: appear 0.8153846154s ease-out 0.6s forwards;
   transform: translateX(30%);
 }
 .menu-flexbox > :nth-child(5) {
   opacity: 0;
-  animation: appear 1.45s ease-out 0.75s forwards;
+  animation: appear 0.9692307692s ease-out 0.75s forwards;
   transform: translateX(35%);
 }
 
@@ -481,6 +481,7 @@ button {
   width: 100%;
   z-index: 1;
   margin-top: -3rem;
+  overflow: hidden;
 }
 .menu__wrapper {
   display: flex;
