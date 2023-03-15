@@ -8,6 +8,17 @@
   padding: 1.375rem 0 2.0625rem 1.5625rem;
 
   &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+
+    @include abst.large {
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: 4.375rem;
+      padding-right: 6.25rem;
+    }
+
     &__list {
       padding: 0;
       display: flex;
@@ -15,21 +26,29 @@
       color: white;
       gap: 0.4375rem;
 
-      &__item:nth-child(-n + 2) {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-weight: 500;
+      @include abst.large {
+        flex-direction: row;
+        gap: 2.5rem;
+      }
+
+      &__item {
+        white-space: nowrap;
+
+        &:nth-child(-n + 2) {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-weight: 500;
+        }
       }
     }
-
     &__logo {
       max-width: 7rem;
       color: white;
-      padding-bottom: 1rem;
     }
   }
 }
+
 .fa-handshake {
   transform: rotate(-35deg);
   width: 11px;

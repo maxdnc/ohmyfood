@@ -11,22 +11,29 @@
 .menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: abst.$Background;
   position: relative;
   padding: 3rem 1rem;
   border-radius: 2.5rem 2.5rem 0 0;
   width: 100%;
   z-index: 1;
-  margin-top: -3rem;
+  margin: -3rem auto 0;
   overflow: hidden;
   gap: 2.5rem;
-
-  //@include abst.delay2(5, 0.4s);
+  max-width: 65.9375rem;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 39.625rem;
+
+    @include abst.medium {
+      justify-content: center;
+      gap: 1.5rem;
+    }
   }
 }
 

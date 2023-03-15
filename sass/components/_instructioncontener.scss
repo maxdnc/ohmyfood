@@ -11,6 +11,11 @@
   border-radius: 1.25rem;
   position: relative;
   transition: 0.2s background-color ease-in-out;
+  @include abst.large {
+    max-width: 20.125rem;
+    margin: auto;
+    width: 100%;
+  }
 
   &__icon {
     color: abst.$icon-colors;

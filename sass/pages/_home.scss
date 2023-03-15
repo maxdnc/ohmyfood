@@ -32,6 +32,11 @@
   &__text {
     color: abst.$darker;
   }
+  &__title {
+    @include abst.large {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 .location {
