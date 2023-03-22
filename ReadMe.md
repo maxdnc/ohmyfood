@@ -7,7 +7,7 @@
 - HTML
 - SASS:
   - BEM convention
-  - Pattern 7-1 stucture.
+  - Pattern 7-1 structure.
 
 ---
 
