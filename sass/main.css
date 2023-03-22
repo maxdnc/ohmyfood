@@ -205,8 +205,8 @@ body {
 }
 @media (min-width: 64rem) {
   .fonctionnement__grid {
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -217,9 +217,8 @@ body {
 }
 @media (min-width: 64rem) {
   .restaurants__grid {
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.625rem;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -324,9 +323,8 @@ body {
 }
 @media (min-width: 64rem) {
   .box {
-    max-width: 20.9375rem;
-    margin: 0 auto;
     width: 100%;
+    max-width: 20.9375rem;
   }
 }
 .box__wrapper-img {
@@ -372,7 +370,6 @@ body {
 @media (min-width: 64rem) {
   .contener {
     max-width: 20.125rem;
-    margin: auto;
     width: 100%;
   }
 }
@@ -596,6 +593,15 @@ body {
   gap: 2rem;
   padding: 3rem 1.25rem 4rem 1.25rem;
   background-color: #f7f7f7;
+}
+
+.wrapper-space {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .fonctionnement {

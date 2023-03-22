@@ -11,6 +11,14 @@
   padding: 3rem 1.25rem 4rem 1.25rem;
   background-color: abst.$Background;
 }
+.wrapper-space {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+}
 
 .fonctionnement {
   display: flex;

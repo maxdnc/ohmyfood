@@ -6,8 +6,8 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 1.5625rem;
     @include abst.large {
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
@@ -19,9 +19,13 @@
     gap: 1rem;
 
     @include abst.large {
-      grid-template-rows: 1fr;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.625rem;
+      display: flex;
+      justify-content: space-between;
+
+      // grid-template-rows: 1fr;
+      // grid-template-columns: repeat(4, 1fr);
+      // justify-content: space-around;
+      // gap: 1.625rem;
     }
   }
 }
