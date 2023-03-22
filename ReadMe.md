@@ -11,4 +11,4 @@
 
 ---
 
-👉 [demo live link ohmyfood](https://maxdnc.github.io/ohmyfood/)
+👉 [DEMO LIVE: ohmyfood](https://maxdnc.github.io/ohmyfood/)
