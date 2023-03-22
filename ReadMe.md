@@ -1,12 +1,13 @@
-# ohmyfood
+# Projet: ohmyfood
 
 ---
 
-##### 🌱 Last update => 15/03 = > premiere version desktop responsive.
+### 🌱 Techno used:
 
-14/03: fake loader added
-
-11/03 animation on restaurants page, animation appear smoothly through a loop in a mixin with variable.
+- HTML
+- SASS:
+  - BEM convention
+  - Pattern 7-1 stucture.
 
 ---
 
