@@ -57,9 +57,28 @@
 
   &__icon {
     color: abst.$darker;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
   }
 
   &__text {
     color: abst.$darker;
+    background: none;
+    width: fit-content;
+    font-weight: 700;
+    border: none;
+
+    text-align: center;
+
+    &::placeholder {
+      font-weight: 700;
+      color: black;
+    }
   }
+}
+
+.wrapper-input {
+  position: relative;
 }

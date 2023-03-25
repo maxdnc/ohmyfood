@@ -81,10 +81,21 @@
       />
     </header>
     <main>
-      <div class="location">
-        <i class="location__icon fa-solid fa-location-dot"></i>
-        <p class="location__text">Paris, Belleville</p>
-      </div>
+      <form class="location">
+        <label for="location-ville" class="location__label" hidden
+          >Recherche ville
+        </label>
+
+        <div class="wrapper-input">
+          <input
+            type="text"
+            id="location-ville"
+            class="location__text"
+            placeholder="Paris, Belleville"
+          />
+          <i class="location__icon fa-solid fa-location-dot"></i>
+        </div>
+      </form>
       <section class="reserver">
         <h1 class="reserver__title bigger">
           Réservez le menu qui vous convient
