@@ -640,9 +640,31 @@ body {
 }
 .location__icon {
   color: #353535;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 .location__text {
   color: #353535;
+  background: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+}
+.location__text::-moz-placeholder {
+  font-weight: 700;
+  color: black;
+}
+.location__text::placeholder {
+  font-weight: 700;
+  color: black;
+}
+
+.wrapper-input {
+  position: relative;
 }
 
 .photo-header__item {
