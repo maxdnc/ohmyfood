@@ -58,7 +58,7 @@
   &__icon {
     color: abst.$darker;
     position: absolute;
-    left: 0;
+    left: 0.5rem;
     top: 50%;
     transform: translate(50%, -50%);
   }
@@ -75,6 +75,7 @@
     &::placeholder {
       font-weight: 700;
       color: black;
+      padding-left: 0.5rem;
     }
   }
 }

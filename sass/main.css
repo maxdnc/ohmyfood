@@ -367,6 +367,9 @@ body {
   position: relative;
   transition: 0.2s background-color ease-in-out;
 }
+.contener-purple {
+  background-color: #f5edff;
+}
 @media (min-width: 64rem) {
   .contener {
     max-width: 20.125rem;
@@ -376,6 +379,9 @@ body {
 .contener__icon {
   color: #7e7e7e;
   transition: 0.2s color ease-in-out;
+}
+.contener__icon-purple {
+  color: #9356dc;
 }
 .contener__number {
   display: inline-flex;
@@ -392,13 +398,6 @@ body {
   height: 1.5rem;
   width: 1.5rem;
   line-height: 150%;
-}
-.contener:hover {
-  cursor: pointer;
-  background-color: #f5edff;
-}
-.contener:hover .contener__icon {
-  color: #9356dc;
 }
 
 .menu-box {
@@ -641,7 +640,7 @@ body {
 .location__icon {
   color: #353535;
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   top: 50%;
   transform: translate(50%, -50%);
 }
@@ -657,10 +656,12 @@ body {
 .location__text::-moz-placeholder {
   font-weight: 700;
   color: black;
+  padding-left: 0.5rem;
 }
 .location__text::placeholder {
   font-weight: 700;
   color: black;
+  padding-left: 0.5rem;
 }
 
 .wrapper-input {
