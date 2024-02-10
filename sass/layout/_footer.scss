@@ -1,11 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
-@use "../abstracts/" as abst;
+@use '../abstracts/' as abst;
 
 .footer {
   background-color: abst.$darker;
-  padding: 1.375rem 0 2.0625rem 1.5625rem;
+  padding: 4rem 1.5625rem 1.875rem 1.5625rem;
 
   &__nav {
     display: flex;
@@ -28,7 +28,7 @@
 
       @include abst.large {
         flex-direction: row;
-        gap: 2.5rem;
+        gap: 1rem;
       }
 
       &__item {
@@ -39,6 +39,9 @@
           align-items: center;
           gap: 1rem;
           font-weight: 500;
+        }
+        &:nth-child(2) {
+          margin-right: 2rem;
         }
       }
     }
