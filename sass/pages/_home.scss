@@ -25,6 +25,9 @@
   flex-direction: column;
   gap: 2rem;
   padding: 3rem 1.25rem 4.25rem 2rem;
+  @include abst.large {
+    padding: 3.125rem 2rem;
+  }
 
   &__title {
     font-size: 1.5rem;

@@ -618,6 +618,11 @@ body {
   gap: 2rem;
   padding: 3rem 1.25rem 4.25rem 2rem;
 }
+@media (min-width: 64rem) {
+  .fonctionnement {
+    padding: 3.125rem 2rem;
+  }
+}
 .fonctionnement__title {
   font-size: 1.5rem;
 }
