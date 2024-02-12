@@ -1,4 +1,4 @@
-@use "../abstracts/" as abst;
+@use '../abstracts/' as abst;
 
 .contener {
   display: flex;
@@ -25,6 +25,7 @@
   &__icon {
     color: abst.$icon-colors;
     transition: 0.2s color ease-in-out;
+    font-size: 1.125rem;
 
     &-purple {
       color: abst.$Primaire;

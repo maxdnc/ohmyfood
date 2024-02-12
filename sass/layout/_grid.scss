@@ -1,4 +1,4 @@
-@use "../abstracts/" as abst;
+@use '../abstracts/' as abst;
 
 .fonctionnement {
   &__grid {
@@ -16,16 +16,13 @@
   &__grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.125rem;
 
     @include abst.large {
-      display: flex;
-      justify-content: space-between;
-
-      // grid-template-rows: 1fr;
-      // grid-template-columns: repeat(4, 1fr);
-      // justify-content: space-around;
-      // gap: 1.625rem;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 9.259%;
+      row-gap: 3.125rem;
     }
   }
 }

@@ -1,12 +1,12 @@
-@use "../abstracts/" as abst;
+@use '../abstracts/' as abst;
 
 .box {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
+  background-color: white;
+
   @include abst.large {
     width: 100%;
-    max-width: 20.9375rem;
   }
 
   &__wrapper-img {
@@ -34,6 +34,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8125rem;
+    padding: 0.75rem 1.125rem;
   }
 }
