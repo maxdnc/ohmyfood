@@ -388,6 +388,7 @@ body {
 .contener__icon {
   color: #7e7e7e;
   transition: 0.2s color ease-in-out;
+  font-size: 1.125rem;
 }
 .contener__icon-purple {
   color: #9356dc;
