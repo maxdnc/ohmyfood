@@ -222,7 +222,7 @@ body {
 .restaurants__grid {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.125rem;
 }
 @media (min-width: 64rem) {
   .restaurants__grid {
@@ -600,14 +600,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 3rem 1.25rem 4rem 1.25rem;
+  padding: 3.375rem 1.25rem 4.125rem 1.25rem;
   background-color: #f7f7f7;
 }
 
 .wrapper-space {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
   max-width: 67.5rem;
   margin: 0 auto;

@@ -1,4 +1,4 @@
-@use "../abstracts/" as abst;
+@use '../abstracts/' as abst;
 
 .fonctionnement {
   &__grid {
@@ -16,7 +16,7 @@
   &__grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 1.125rem;
 
     @include abst.large {
       display: flex;
