@@ -652,17 +652,14 @@ body {
   background: none;
   width: -moz-fit-content;
   width: fit-content;
-  font-weight: 700;
   border: none;
   text-align: center;
 }
 .location__text::-moz-placeholder {
-  font-weight: 700;
   color: black;
   padding-left: 0.5rem;
 }
 .location__text::placeholder {
-  font-weight: 700;
   color: black;
   padding-left: 0.5rem;
 }

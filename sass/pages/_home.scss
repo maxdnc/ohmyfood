@@ -2,7 +2,7 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-@use "../abstracts/" as abst;
+@use '../abstracts/' as abst;
 
 .restaurants {
   display: flex;
@@ -67,13 +67,10 @@
     color: abst.$darker;
     background: none;
     width: fit-content;
-    font-weight: 700;
     border: none;
-
     text-align: center;
 
     &::placeholder {
-      font-weight: 700;
       color: black;
       padding-left: 0.5rem;
     }
