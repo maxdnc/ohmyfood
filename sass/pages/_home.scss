@@ -10,6 +10,9 @@
   gap: 2rem;
   padding: 3.375rem 1.25rem 4.125rem 1.25rem;
   background-color: abst.$Background;
+  @include abst.large {
+    padding: 1.875rem 1.25rem;
+  }
 }
 .wrapper-space {
   display: flex;
