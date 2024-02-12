@@ -36,12 +36,17 @@
   text-align: center;
   background-color: abst.$Background;
   padding: 3rem 1.25rem 4rem 1.25rem;
+  @include abst.medium {
+    padding: 1.875rem 1.25rem;
+  }
 
   &__text {
     color: abst.$darker;
+    font-size: 1.125rem;
   }
   &__title {
-    @include abst.large {
+    font-size: 1.5rem;
+    @include abst.medium {
       font-size: 2.5rem;
     }
   }
